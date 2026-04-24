@@ -1,9 +1,7 @@
 'use client';
 
-import dynamic from 'next/dynamic';
-import { useState, useEffect } from 'react';
-
-const MemeCard = dynamic(() => import('@/components/MemeCard'), { ssr: false });
+import MemeCard from '@/components/MemeCard';
+import { useState } from 'react';
 interface Meme {
   id: number;
   imageSrc: string;
